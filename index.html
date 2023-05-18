@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <title>Cafe Order Form</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header-title">La Belle</h1>
+        <h2 class="header-subtitle">Кафе &amp; Ресторан</h2>
+    </header>
+    <div class="intro">
+        <img src="img/restauranteurs.jpg" alt="" class="intro-img">
+    </div>
+
+    <div class="form-container">
+        <div class="form-group">
+            <h3 class="form-heading">Выберите менеджера:</h3>
+            <select name="manager" id="manager-select">
+                <option value="1">Менеджер 1</option>
+                <option value="2">Менеджер 2</option>
+                <option value="3">Менеджер 3</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <h3 class="form-heading">Введите ФИО:</h3>
+            <input type="text" class="form-input" name="last-name" placeholder="Фамилия" required>
+            <input type="text" class="form-input" name="first-name" placeholder="Имя" required>
+            <input type="text" class="form-input" name="middle-name" placeholder="Отчество" required>
+        </div>
+
+        <div class="menu-container">
+            <h3 class="form-heading">Выберите блюда:</h3>
+            <div class="menu-row">
+                <div class="menu-card">
+                    <img src="img/1.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $10</p>
+                </div>
+
+                <div class="menu-card">
+                    <img src="img/2.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $12</p>
+                </div>
+
+                <div class="menu-card">
+                    <img src="img/3.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $15</p>
+                </div>
+            </div>
+            <div class="menu-row">
+                <div class="menu-card">
+                    <img src="img/1.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $10</p>
+                </div>
+
+                <div class="menu-card">
+                    <img src="img/2.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $12</p>
+                </div>
+
+                <div class="menu-card">
+                    <img src="img/3.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $15</p>
+                </div>
+            </div>
+            <div class="menu-row">
+                <div class="menu-card">
+                    <img src="img/1.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $10</p>
+                </div>
+
+                <div class="menu-card">
+                    <img src="img/2.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $12</p>
+                </div>
+
+                <div class="menu-card">
+                    <img src="img/3.jpg" alt="Фото блюда">
+                    <h4 class="menu-title">Название блюда</h4>
+                    <p class="menu-price">Цена: $15</p>
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button type="submit" class="submit-button">Сформировать заказ</button>
+        </div>
+    </div>
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Ваш заказ</h2>
+    <div id="modal-order-details"></div>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
